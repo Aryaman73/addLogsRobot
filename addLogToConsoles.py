@@ -15,7 +15,7 @@ while line:
     f2.write(str(line))
 
     if addLogs and line.startswith(('    ')):
-        f2.write("\tlog to console    " + str(line))
+        f2.write("\tlog to console    " + str(line)[:25] + "\n")
 
     line = f.readline()
 
